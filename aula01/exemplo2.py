@@ -1,9 +1,11 @@
 import random
 
-letras = 'abcdefghijklmnopqrstuvwxyz'
+# letras = 'abcdefghijklmnopqrstuvwxyz'
 
 tamanho_palavra = int(input("Qual tamanho da palavra que quer gerar? "))
 palavra = ''
+
+
 
 print(letras)
 print("tamanho da string letras: ", len(letras))
