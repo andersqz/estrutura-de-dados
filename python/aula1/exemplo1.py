@@ -1,4 +1,5 @@
 import random
+from util import popularListaArquivo
 
 listUniqueNumbers = []
 
