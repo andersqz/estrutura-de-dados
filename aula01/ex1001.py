@@ -4,7 +4,7 @@
 
 import random
 
-list = []
+numeros = []
 
 # estrutura que verifica se a entrada eh um inteiro positivo
 while True:
@@ -16,28 +16,29 @@ while True:
 
 for i in range(n):
     numeros_sorteados = random.randint(1, 100)
-    list.append(numeros_sorteados)
+    numeros.append(numeros_sorteados)
 
-maior = list[0]
-menor = list[0]
+maior = numeros[0]
+menor = numeros[0]
 posicao_maior = 0
 posicao_menor = 0
 soma = 0
 
 for i in range(n):
-    if list[i] > maior:
-        maior = list[i]
+    if numeros[i] > maior:
+        maior = numeros[i]
         posicao_maior = i
 
     if list[i] < menor:
-        menor = list[i]
+        menor = numeros[i]
         posicao_menor = i
         
-    soma = soma + list[i]
+    soma = soma + numeros[i]
 
 media = soma / n
 print("a media dos numeros eh", media)
 print("o maior numero da lista eh: ", maior)
+print("o menor numero da lista eh: ", menor)
 print("a posicao do maior elemento no vetor: ", posicao_maior)
 print("a posicao do menor elemento no vetor: ", posicao_menor)
 
