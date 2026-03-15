@@ -20,7 +20,7 @@ void popularListaArquivo(const std::vector<std::string>& lista, const std::strin
         std::cout << "Lista salva em: " << nomeArquivo << std::endl;
     }
 
-
+    
 }
 
 int main() {
