@@ -1,4 +1,4 @@
-from util import popularListaArquivo
+from python.util import popularListaArquivo
 lista = []
 
 lerArquivoLista("numeros.txt", lista)
