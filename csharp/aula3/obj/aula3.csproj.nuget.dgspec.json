@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\estrutura-de-dados\\csharp\\aula2\\MinhaBiblioteca\\MinhaBiblioteca.csproj": {}
+    "C:\\dev\\estrutura-de-dados\\csharp\\aula3\\aula3.csproj": {}
   },
   "projects": {
-    "C:\\dev\\estrutura-de-dados\\csharp\\aula2\\MinhaBiblioteca\\MinhaBiblioteca.csproj": {
+    "C:\\dev\\estrutura-de-dados\\csharp\\aula3\\aula3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\estrutura-de-dados\\csharp\\aula2\\MinhaBiblioteca\\MinhaBiblioteca.csproj",
-        "projectName": "MinhaBiblioteca",
-        "projectPath": "C:\\dev\\estrutura-de-dados\\csharp\\aula2\\MinhaBiblioteca\\MinhaBiblioteca.csproj",
+        "projectUniqueName": "C:\\dev\\estrutura-de-dados\\csharp\\aula3\\aula3.csproj",
+        "projectName": "aula3",
+        "projectPath": "C:\\dev\\estrutura-de-dados\\csharp\\aula3\\aula3.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\estrutura-de-dados\\csharp\\aula2\\MinhaBiblioteca\\obj\\",
+        "outputPath": "C:\\dev\\estrutura-de-dados\\csharp\\aula3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

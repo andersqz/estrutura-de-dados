@@ -1,0 +1,15 @@
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.AssemblyInfoInputs.cache
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.AssemblyInfo.cs
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.csproj.CoreCompileInputs.cache
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.sourcelink.json
+C:\dev\estrutura-de-dados\csharp\aula3\bin\Debug\net10.0\aula3.exe
+C:\dev\estrutura-de-dados\csharp\aula3\bin\Debug\net10.0\aula3.deps.json
+C:\dev\estrutura-de-dados\csharp\aula3\bin\Debug\net10.0\aula3.runtimeconfig.json
+C:\dev\estrutura-de-dados\csharp\aula3\bin\Debug\net10.0\aula3.dll
+C:\dev\estrutura-de-dados\csharp\aula3\bin\Debug\net10.0\aula3.pdb
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.dll
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\refint\aula3.dll
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.pdb
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\aula3.genruntimeconfig.cache
+C:\dev\estrutura-de-dados\csharp\aula3\obj\Debug\net10.0\ref\aula3.dll

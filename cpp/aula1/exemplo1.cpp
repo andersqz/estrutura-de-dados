@@ -4,6 +4,8 @@
 #include <cstdlib>
 #include <ctime>
 
+using na
+
 int main() {
     
     std::vector<int> listUniqueNumbers;
