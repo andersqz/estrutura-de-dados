@@ -17,6 +17,9 @@ class Program
     static void Main()
     {
         string nomeArquivo = "dados.csv";
+        string[] mesesVerao = {"Dezembro", "Janeiro", "Fevereiro", "Março"};
+        string[] mesesInverno = {"Agosto", "Setembro", "Outubro", "Novembro"};
+        string[] mesesOutono = {"Abril", "Maio", "Junho", "Julho"};
         
         // listas que vao receber os dadosClimaticos separando para cada lista uma estação, lista com dados verao, lista com dados inverno e lista com dados outono
         List<Clima> dadosClimaticos = new List<Clima>();
@@ -27,10 +30,10 @@ class Program
         // método que recebe o nome do arquivo que esta os dados e uma lista vazia para receber os dados gerais nessa lista
         dadosClimaticos = Clima.LerDadosEpassarParaLista(nomeArquivo, dadosClimaticos);
 
-        // instaciação das listas vazias de cada estação recebendo por argumento os dadosClimaticos separados para cada estação
+        //instaciação das listas vazias de cada estação recebendo por argumento os dadosClimaticos separados para cada estação
         dadosVerao = Clima.DadosVerao(dadosClimaticos);
         dadosInverno = Clima.DadosInverno(dadosClimaticos);
-        dadosOutono = Clima.DadosOutono(dadosClimaticos);
+       dadosOutono = Clima.DadosOutono(dadosClimaticos);
 
         // listas declaradas para receber apenas as linhas que são de determinada temperatura, lista com temp quente, lista com temp frio, lista com temp ameno
         List<Clima> Quente = new List<Clima>();
@@ -41,9 +44,9 @@ class Program
         // SAIDA DE DADOS EXIBINDO OS DADOS APENAS NA TEMPERATURA QUENTE E EXIBINDO A QUANTIDADE DE TEMPERATURA QUENTE EM CADA ESTAÇÃO
         Console.WriteLine("----------------------------------------------");
         Quente = Clima.MaisQuente(dadosClimaticos);
-        int quenteInVerao = Clima.QuantidadeQuenteEmVerao(Quente);
+        int quenteInVerao = Clima.QuantidadeQuenteEmVerao(Quente, mesesVerao);
         int quenteInInverno = Clima.QuantidadeQuenteEmInverno(Quente);
-        int quenteInOutono = Clima.QuantidadeQuenteEmInverno(Quente);
+        int quenteInOutono = Clima.QuantidadeQuenteEmOutono(Quente);
         Console.WriteLine($"Quantidade de temperaturas quentes no verão:  {quenteInVerao}");
         Console.WriteLine($"Quantidade de temperaturas quentes no inverno:  {quenteInInverno}");
         Console.WriteLine($"Quantidade de temperaturas quentes no outono:  {quenteInOutono}");
@@ -200,7 +203,6 @@ class Clima
     {
         List<Clima> dadosVerao = new List<Clima>();
         string[] mesesVerao = {"Dezembro", "Janeiro", "Fevereiro", "Março"};
-
         foreach (Clima clima in lista)
         {
             foreach (string mes in mesesVerao)
@@ -316,10 +318,9 @@ class Clima
 
 
     // método que recebe a lista com todas as linhas que contém a temperatura "Quente" e soma quantas temperaturas "Quente" tem na estação verão
-    public static int QuantidadeQuenteEmVerao(List<Clima> lista)
+    public static int QuantidadeQuenteEmVerao(List<Clima> lista, string[] mesesVerao)
     {   
         int qntdQuenteEmVerao = 0;
-        string[] mesesVerao = {"Dezembro", "Janeiro", "Fevereiro", "Março"};
         foreach (Clima clima in lista)
         {
             foreach (string i in mesesVerao)
@@ -337,9 +338,8 @@ class Clima
 
 
     // método que recebe a lista com todas as linhas que contém temperatura "Frio" e soma quantas temperaturas "Frio" tem na estação verão
-    public static int QuantidadeFrioEmVerao(List<Clima> lista)
+    public static int QuantidadeFrioEmVerao(List<Clima> lista, string[] mesesVerao)
     {
-        string[] mesesVerao = {"Dezembro", "Janeiro", "Fevereiro", "Março"};
         int qntdFrioEmVerao = 0;
         foreach (Clima clima in lista)
         {
@@ -357,9 +357,8 @@ class Clima
 
 
         // método que recebe a lista com todas as linhas que contém temperatura "Ameno" e soma quantas temperaturas "Ameno" tem na estação verão
-    public static int QuantidadeAmenoEmVerao(List<Clima> lista)
+    public static int QuantidadeAmenoEmVerao(List<Clima> lista, string[] mesesVerao)
     {
-        string[] mesesVerao = {"Dezembro", "Janeiro", "Fevereiro", "Março"};
         int qntdAmenoEmVerao = 0;
         foreach (Clima clima in lista)
         {
@@ -377,9 +376,8 @@ class Clima
 
 
     // método que recebe a lista com as linhas que contém a temperatura == "Quente" e soma quantas Temperaturas "Quente" tem na estação inverno
-    public static int QuantidadeQuenteEmInverno(List<Clima> lista)
+    public static int QuantidadeQuenteEmInverno(List<Clima> lista, string[] mesesInverno)
     {
-        string[] mesesInverno = {"Agosto", "Setembro", "Outubro", "Novembro"};
         int qntdQuenteEmInverno = 0;
         foreach (Clima clima in lista)
         {
@@ -397,9 +395,8 @@ class Clima
 
     
     // método que recebe a lista com as linhas que contém a temperatura == "Frio" e soma quantas Temperaturas "Frio" tem na estação inverno
-    public static int QuantidadeFrioEmInverno(List<Clima> lista)
+    public static int QuantidadeFrioEmInverno(List<Clima> lista, string[] mesesInverno)
     {
-        string[] mesesInverno = {"Agosto", "Setembro", "Outubro", "Novembro"};
         int qntdFrioEmInverno = 0;
         foreach (Clima clima in lista)
         {
@@ -417,9 +414,8 @@ class Clima
 
 
     // método que recebe a lista com linhas que contém a temperatura == "Ameno" e soma quantas Temperaturas "Amenos" tem na estação inverno
-    public static int QuantidadeAmenoEmInverno(List<Clima> lista)
+    public static int QuantidadeAmenoEmInverno(List<Clima> lista, string[] mesesInverno)
     {
-        string[] mesesInverno = {"Agosto", "Setembro", "Outubro", "Novembro"};
         int qntdAmenoEmInverno = 0;
         foreach (Clima clima in lista)
         {
@@ -437,9 +433,8 @@ class Clima
 
 
     // método que recebe a lista com linhas que contém a temperatura == "Quente" e soma quantas Temperaturas "Quente" tem na estação outono
-    public static int QuantidadeQuenteEmOutono(List<Clima> lista)
+    public static int QuantidadeQuenteEmOutono(List<Clima> lista, string[] mesesOutono)
     {
-        string[] mesesInverno = {"Abril", "Maio", "Junho", "Julho"};
         int qntdQuenteEmOutono = 0;
         foreach (Clima clima in lista)
         {
@@ -457,9 +452,8 @@ class Clima
 
 
     // método que recebe a lista com linhas que contém a temperatura == "Frio" e soma quantas Temperaturas "Frio" tem na estação Outono
-    public static int QuantidadeFrioEmOutono(List<Clima> lista)
+    public static int QuantidadeFrioEmOutono(List<Clima> lista, string[] mesesOutono)
     {
-        string[] mesesInverno = {"Abril", "Maio", "Junho", "Julho"};
         int qntdFrioEmOutono = 0;
         foreach (Clima clima in lista)
         {
@@ -476,9 +470,8 @@ class Clima
     }
 
     // método que recebe a lista com linhas que contém a temperatura == "Ameno" e soma quantas Temperaturas "Ameno" tem na estação Outono
-    public static int QuantidadeAmenoEmOutono(List<Clima> lista)
+    public static int QuantidadeAmenoEmOutono(List<Clima> lista, string[] mesesOutono)
     {
-        string[] mesesInverno = {"Abril", "Maio", "Junho", "Julho"};
         int qntdAmenoEmOutono = 0;
         foreach (Clima clima in lista)
         {
