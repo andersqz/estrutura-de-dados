@@ -1,2 +1,26 @@
 bin/
 obj/
+
+# Compilados
+*.class
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Pastas comuns de build
+/target/
+/bin/
+/build/
+/out/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
